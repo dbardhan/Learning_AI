@@ -4,6 +4,7 @@ class Node:
         self.left = None
         self.right = None
 
+
 class BST:
     def __init__(self):
         self.root = None
@@ -30,6 +31,8 @@ class BST:
             res.append(node.key)
             res += self._inorder(node.right)
         return res
+
+
 if __name__ == "__main__":
     bst = BST()
     keys = [50, 30, 20, 40, 70, 60, 80]
